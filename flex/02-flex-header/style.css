@@ -1,25 +1,62 @@
+* {
+  border: 1px dotted red;
+  margin: 5px;
+}
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  flex: 1 1 0;
+
 }
 
 .logo {
+  text-align: center;
   font-size: 48px;
   font-weight: 900;
   color: tomato;
-  background: white;
-  padding: 4px 32px;
+  /*background: white;*/
+  padding: 4px 32px 4px 32px;
+  flex: 0 2 auto;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  flex: 1 1 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
+
+.right-links, .left-links {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+
+.right-links ul{
+  justify-content: right;
+}
+
+.left-links ul{
+  justify-content: left;
+}
+
+li {
+  vertical-align: 50pc;
+  margin: 5px; 
+  padding: 8px16px 8px 16px 8px;
+  
+}
+
 
 a {
   font-size: 22px;
   background: white;
-  padding: 8px;
+  padding: 0;
   /* this removes the line under the links */
   text-decoration: none;
 }
